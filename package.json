@@ -1,5 +1,5 @@
 {
-  "name": "fca-dongdev2006",
+  "name": "fca-caochithanh",
   "version": "1.7.5",
   "description": "Facebook chat API that doesn't rely on XMPP.",
   "main": "Index.js",
@@ -11,7 +11,7 @@
   "author": "Avery, David, Maude, Benjamin, UIRI, KanzuWakazaki, MDong",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MDong-06/Fca-Donqdz2006/issues"
+    "url": "https://github.com/ViegoCKPhanHoang/Fca-CaoChiThanhDev/pulls"
   },
   "repository": {
     "type": "git",
