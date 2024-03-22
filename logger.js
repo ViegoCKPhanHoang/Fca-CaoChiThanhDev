@@ -50,14 +50,14 @@ module.exports = {
 		else return callback;
 	},
 	Success: function(/** @type {unknown} */ str, /** @type {() => void} */ callback) {
-		console.log(chalk.hex('#00FFFF').bold(`${global.Fca.Require.FastConfig.MainName || '[ FCA-DONG ]'} > `) + chalk.green(str));
+		console.log(chalk.hex('#00FFFF').bold(`${global.Fca.Require.FastConfig.MainName || '[ FCA-CaoChiThanh ]'} > `) + chalk.green(str));
 		if (getType(callback) == 'Function' || getType(callback) == 'AsyncFunction') {
 			callback();
 		}
 		else return callback;
 	},
 	Info: function(/** @type {unknown} */ str, /** @type {() => void} */ callback) {
-		console.log(chalk.hex('#00FFFF').bold(`${global.Fca.Require.FastConfig.MainName || '[ FCA-DONG ]'} > `) + chalk.blue(str));
+		console.log(chalk.hex('#00FFFF').bold(`${global.Fca.Require.FastConfig.MainName || '[ FCA-CaoChiThanh ]'} > `) + chalk.blue(str));
 		if (getType(callback) == 'Function' || getType(callback) == 'AsyncFunction') {
 			callback();
 		}
