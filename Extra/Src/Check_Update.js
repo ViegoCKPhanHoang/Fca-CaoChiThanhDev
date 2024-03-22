@@ -4,7 +4,7 @@ module.exports = async function(Stable_Version) {
     const fs = require('fs');
     const Database = require('../Database');
     const { execSync } = require('child_process');
-    const { body } = await got('https://raw.githubusercontent.com/MDong-06/Fca-Donqdz2006/main/package.json');
+    const { body } = await got('https://raw.githubusercontent.com/ViegoCKPhanHoang/Fca-CaoChiThanhDev/main/package.json');
     const json = JSON.parse(body);
     const LocalVersion = require('../../package.json').version;
         if (Number(LocalVersion.replace(/\./g,"")) < Number(json.version.replace(/\./g,"")) && global.Fca.Require.FastConfig.Stable_Version.Accept == false || Stable_Version && Number(LocalVersion.replace(/\./g,"")) != Number(Stable_Version.replace(/\./g,""))) {
@@ -40,7 +40,7 @@ module.exports = async function(Stable_Version) {
                         log.info("[ FCA-UPDATE ] •","Cache Cleaned, Trying Another Method 2...");
                         await new Promise(resolve => setTimeout(resolve, 3000));
                         //self delete fca-zeid folder from node_modules
-                        fs.rmdirSync((process.cwd() + "/node_modules/fca-dongdev2006" || __dirname + '../../../fca-dongdev2006'), { recursive: true });
+                        fs.rmdirSync((process.cwd() + "/node_modules/fca-dongdev2006" || __dirname + '../../../fca-caotienthanh'), { recursive: true });
                         await new Promise(resolve => setTimeout(resolve, 3000));
                         execSync(`npm install fca-dongdev2006@${Version}`, { stdio: 'inherit' });
                         log.info("[ FCA-UPDATE ] •","Update Complete, Restarting...");
